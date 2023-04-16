@@ -27,6 +27,10 @@ void add_to_set(struct Set *s, int num) {
     /* Check if it's the first time inserting an item to the set */
     if (s->head_ptr == NULL) {
         s->head_ptr = realloc(s->head_ptr, sizeof(int));
+        if (s->head_ptr == NULL) { /* check if the memory allocation failed */
+            printf("Error: failed to allocate memory.\n");
+            exit(1);
+        }
         *(s->head_ptr) = num;
         s->last_index++;
         return;
@@ -40,6 +44,10 @@ void add_to_set(struct Set *s, int num) {
 
     /* Add the new value to the end of the array and update the last index */
     s->head_ptr = realloc(s->head_ptr, ENLARGE_SIZE(s->last_index) * sizeof(int));
+    if (s->head_ptr == NULL) {  /* check if the memory allocation failed */
+        printf("Error: failed to allocate memory.\n");
+        exit(1);
+    }
     *(s->head_ptr + s->last_index) = num;
     s->last_index++;
 }
