@@ -1,0 +1,5 @@
+Enter a list of numbers (terminate with EOF):
+All numbers that were read: 
+13 13 13 45 -9 -9 -9 18 18 18 3 4 55 45 66 13 66 
+Distinct numbers in order of arrival: 
+13 45 -9 18 3 4 55 66 

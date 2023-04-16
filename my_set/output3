@@ -1,0 +1,5 @@
+Enter a list of numbers (terminate with EOF):
+All numbers that were read: 
+45 98 12 32 32 0 32 45 0 0 -95 98 98 
+Distinct numbers in order of arrival: 
+45 98 12 32 0 -95 

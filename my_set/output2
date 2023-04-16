@@ -1,0 +1,5 @@
+Enter a list of numbers (terminate with EOF):
+All numbers that were read: 
+1 1 1 1 1 2 2 2 1 1 1 2 3 3 3 1 2 1 2 1 2 3 1 2 2 2 2 1 2 3 3 3 3 
+Distinct numbers in order of arrival: 
+1 2 3 
