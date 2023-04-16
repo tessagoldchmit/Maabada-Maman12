@@ -65,7 +65,9 @@ void print_set(struct Set *s) {
  */
 void get_set(struct Set *s) {
     int num;
+    printf("All numbers that were read: \n");
     while (scanf("%d ", &num) == 1 && num != EOF) {
+        printf("%d ", num); /* print all the numbers that were read from stdin */
         add_to_set(s, num);
     }
 }
@@ -78,7 +80,7 @@ int main() {
     printf("Enter a list of numbers (terminate with EOF):\n");
     get_set(&s);
 
-    printf("Distinct numbers in order of arrival: ");
+    printf("\nDistinct numbers in order of arrival: \n");
     print_set(&s);
 
     free(s.head_ptr);
